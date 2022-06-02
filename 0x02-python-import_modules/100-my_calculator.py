@@ -6,12 +6,10 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) - 1 != 3:
-        usage = "Usage: ./100-my_calculator.py <a> <operator> <b>"
-        print(usage)
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
 
     ops = {"+": add, "-": sub, "*": mul, "/": div}
     if sys.argv[2] not in list(ops.keys()):
-        unknown = "Unknown operator. Available operators: +, -, * and /"
-        print(unknown)
+        print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
