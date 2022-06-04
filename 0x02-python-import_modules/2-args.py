@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """Print the number of and list of arguments."""
+    """Let's manage the arguments"""
     import sys
 
     index = len(sys.argv) - 1
